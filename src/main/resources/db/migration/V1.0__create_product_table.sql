@@ -1,0 +1,9 @@
+-- Create table PRODUCT
+CREATE TABLE PRODUCT (
+    PRODUCT_ID SERIAL NOT NULL PRIMARY KEY,
+    SEQUENCE INT
+);
+
+-- Add column comments
+COMMENT ON COLUMN PRODUCT.PRODUCT_ID IS 'Product identifier';
+COMMENT ON COLUMN PRODUCT.SEQUENCE IS 'Product position in web';
